@@ -2,14 +2,14 @@
 <html>
   <head>
     <title>Data Layer: Drag and Drop GeoJSON</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="http://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link
-      href="https://unpkg.com/material-components-web@6.0.0/dist/material-components-web.css"
+      href="http://unpkg.com/material-components-web@6.0.0/dist/material-components-web.css"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="http://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
     <link rel="stylesheet" type="text/css" href="./style.css" />
@@ -20,10 +20,52 @@
       <div id="map"></div>
       <div id="sidebar" class="mdc-typography">
         <div class="file" draggable="true" data-value="0">
-          <span class="material-icons">text_snippet</span>
+          <img class="blue" src="./globe.png" alt="globe">
+          <img class="orange" src="./globe1.png" alt="globe">
           <div class="filename">polygons.geojson</div>
         </div>
+        <div class="file" draggable="true" data-value="3">
+          <img class="blue" src="./globe.png" alt="globe">
+          <img class="orange" src="./globe1.png" alt="globe">
+          <div class="filename">address.geojson</div>
+        </div>
+        <div class="file" draggable="true" data-value="4">
+          <img class="blue" src="./globe.png" alt="globe">
+          <img class="orange" src="./globe1.png" alt="globe">
+          <div class="filename">amenity.geojson</div>
+        </div>
+        <div class="file" draggable="true" data-value="5">
+          <img class="blue" src="./globe.png" alt="globe">
+          <img class="orange" src="./globe1.png" alt="globe">
+          <div class="filename">anchor.geojson</div>
+        </div>
+        <div class="file" draggable="true" data-value="6">
+          <img class="blue" src="./globe.png" alt="globe">
+          <img class="orange" src="./globe1.png" alt="globe">
+          <div class="filename">Building.geojson</div>
+        </div>
+        <div class="file" draggable="true" data-value="7">
+          <img class="blue" src="./globe.png" alt="globe">
+          <img class="orange" src="./globe1.png" alt="globe">
+          <div class="filename">footprint.geojson</div>
+        </div>
+        <div class="file" draggable="true" data-value="8">
+          <img class="blue" src="./globe.png" alt="globe">
+          <img class="orange" src="./globe1.png" alt="globe">
+          <div class="filename">level.geojson</div>
+        </div>
+        <div class="file" draggable="true" data-value="9">
+          <img class="blue" src="./globe.png" alt="globe">
+          <img class="orange" src="./globe1.png" alt="globe">
+          <div class="filename">unit.geojson</div>
+        </div>
+        <div class="file" draggable="true" data-value="10">
+          <img class="blue" src="./globe.png" alt="globe">
+          <img class="orange" src="./globe1.png" alt="globe">
+          <div class="filename">venue.geojson</div>
+        </div>
       </div>
+
     </div>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->

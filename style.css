@@ -26,16 +26,33 @@ body {
 
 .file {
   display: flex;
-  flex-flow: column;
   margin-top: 1em;
   cursor: move;
   text-align: center;
+  border:1px solid #00adff;
+  padding:10px;
+  border-radius:5px;
+  align-items:center;
 }
-.file:hover .material-icons {
-  color: darkorange;
+.file img{
+  max-width: 40px;
+  margin-right:20px;
+}
+
+.file img.orange{
+  display: none;
+}
+.file:hover {
+  border:1px solid darkorange;
+}
+.file:hover img.blue{
+  display:none;
+}
+.file:hover img.orange{
+  display:inline-block;
 }
 .file:hover .filename {
-  font-weight: bold;
+  color: darkorange;
 }
 .file .material-icons {
   font-size: 50px;
@@ -45,9 +62,12 @@ body {
   color: darkorange;
 }
 .file .filename {
-  margin-top: 0.5em;
   font-size: 20px;
   color: #333333;
+}
+
+.file .filename{
+  display:inline-block;
 }
 
 /* Optional: Makes the sample page fill the window. */
